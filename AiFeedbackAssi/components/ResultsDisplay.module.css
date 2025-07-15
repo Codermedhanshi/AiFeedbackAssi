@@ -1,0 +1,125 @@
+.resultsContainer {
+  margin: 24px 0;
+  padding: 24px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.noResults {
+  text-align: center;
+  color: #6c757d;
+  font-style: italic;
+  padding: 40px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  border-bottom: 2px solid #dee2e6;
+  padding-bottom: 16px;
+}
+
+.header h2 {
+  margin: 0;
+  color: #212529;
+}
+
+.totalScore {
+  font-size: 18px;
+  font-weight: 600;
+  color: #007bff;
+}
+
+.scoresGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.scoreCard {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  padding: 16px;
+  transition: box-shadow 0.2s;
+}
+
+.scoreCard:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.scoreHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.scoreHeader h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #212529;
+}
+
+.score {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.scoreDescription {
+  font-size: 14px;
+  color: #6c757d;
+  margin-bottom: 8px;
+}
+
+.scoreType {
+  font-size: 12px;
+  color: #868e96;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.feedbackSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.feedbackCard {
+  background: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.feedbackCard h3 {
+  margin: 0 0 12px 0;
+  color: #212529;
+  font-size: 18px;
+}
+
+.feedbackCard p {
+  margin: 0;
+  color: #495057;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+  
+  .scoresGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .feedbackSection {
+    grid-template-columns: 1fr;
+  }
+} 

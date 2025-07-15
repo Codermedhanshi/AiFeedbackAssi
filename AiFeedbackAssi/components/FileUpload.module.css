@@ -1,0 +1,50 @@
+.uploadArea {
+  border: 2px dashed #dee2e6;
+  border-radius: 8px;
+  padding: 40px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: #f8f9fa;
+  margin: 16px 0;
+}
+
+.uploadArea:hover {
+  border-color: #007bff;
+  background: #e3f2fd;
+}
+
+.dragging {
+  border-color: #007bff;
+  background: #e3f2fd;
+  transform: scale(1.02);
+}
+
+.fileInput {
+  display: none;
+}
+
+.uploadContent {
+  pointer-events: none;
+}
+
+.uploadIcon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.uploadText p {
+  margin: 4px 0;
+  font-size: 16px;
+  color: #495057;
+}
+
+.uploadText p:first-child {
+  font-weight: 600;
+}
+
+.supportedFormats {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #6c757d;
+} 
